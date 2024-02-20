@@ -34,7 +34,7 @@ h6 {color:#fff;padding-bottom: 30px;}
 .intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
 
 .button{padding: 18px
-    15px; background: #96bc31;display: inline-block;border-radius: 4px;font-family: "Montserrat";}
+    15px; background: #96bc31;display: inline-block;border-radius: 4px;font-family: "Montserrat"; }
 .buttonw{padding: 18px
     15px; background: #fff;display: inline-block;border-radius: 4px;font-family: "Montserrat"; margin-top: 10px;}
 
@@ -49,7 +49,6 @@ h6 {color:#fff;padding-bottom: 30px;}
 }
 
 .logo{
-    
 }
 .menu{
 
@@ -61,12 +60,14 @@ h6 {color:#fff;padding-bottom: 30px;}
 .menu li a{color : #555555;padding: 40px;display: block; font-family: "Montserrat", serif;}
 
 .cta{
-
+    margin: 0 auto;
+    display: block;
+    margin-top: 20PX;
 }
 
 .hero{
 
-
+    padding: 20px;
     height: 600px;
     display: flex; width: 100% ;align-items: center;
     background: url('foglia.jpg') no-repeat center center;
