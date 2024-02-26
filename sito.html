@@ -25,6 +25,11 @@
         <div class="cta">
             <a href=""class="button">Contatti</a>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </body>
 </html>
@@ -39,4 +44,33 @@
 
 
 
+<div class="poster">
+    <div class="poster___img">
+        <img src="ganja.jpg" alt="">
+    </div>
+    <div class="poster_content">
+        <h1 class="big-text" >Titolo della mia poster</h1>
+        <pposter>Lorem ipsum dolor sit amet, consectetur adipisicing nekjfnejkfkjbginegbenfibsknfuisejfgsehfbuhsegfu efueshfiues hg gnh sf  e f es f sef sf  r r h rgrg </pposter>
+        <a href="" class="button"> Call to action</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+    $( document ).ready(function() {
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu-open");
+      });
+    });
+</script>
 
