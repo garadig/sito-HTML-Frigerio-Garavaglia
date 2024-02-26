@@ -128,7 +128,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 
 .poster___img{
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
@@ -140,10 +140,9 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 
 .poster_content{
-    width: 30%;
+    width: 45%;
     padding: 40px;
     font-family: "montserrat";
-    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -173,6 +172,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 
 .ml{margin-left: 50px;}
+.pt{padding-top: 15px;}
 
 
 
