@@ -13,7 +13,7 @@ body{
 .montserrat-uniquifier {
 font-family: "Montserrat", sans-serif;
 font-optical-sizing: auto;
-font-weight: <weight>;
+font-weight: weight;
 font-style: normal;
 }
 
@@ -54,9 +54,9 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     box-shadow: 0px 0px 10px 0px black; color:black
 }
 
-
-
-
+.green{
+  color:#96bc31
+}
 
   .header{
     width: 100%;
@@ -88,7 +88,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 .menu li a:hover, 
 .menu li a.active{
-  color:#81e170
+  color:#96bc31
 }
 
 .hamburger{ display: none;}
@@ -181,7 +181,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     margin: 2 px 0px 0 0;
     border-top: 3px solid rgba(134,200,32);
 
-}
+} 
 
 
 
@@ -192,8 +192,10 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     width: 45%;
     padding: 40px;
     font-family: "montserrat";
-    display: block
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .ft{
   font-size: 50px; font-weight: 800px;
@@ -218,6 +220,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   background-size: cover;
   box-shadow: 0px 0px 100px 0px black;
   margin-top: 100px;
+}
 
 .covertext{
   width: 50%;
@@ -227,7 +230,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .covertitle{
   width: 50%;
   font-family: "montserrat";
-  display: flex;
+  display: block;
   align-items: center;
   padding: 50px;
 }
