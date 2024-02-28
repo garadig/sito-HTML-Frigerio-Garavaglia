@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="header">
@@ -18,8 +18,8 @@
             <img src="logosito.png" alt="">
         </div>
         <ul class="menu">
-            <li><a href="">HOME PAGE</a></li>
-            <li><a href="info.html">SHOP</a></li>
+            <li><a class= "active" href="">HOME PAGE</a></li>
+            <li><a class=  href="info.html">SHOP</a></li>
             <li><a href="">CHI SIAMO</a></li>
         </ul>
         <div class="cta">
@@ -31,7 +31,7 @@
             <span></span>
         </div>
     </div>
-</body>
+
 
 
 <div class="hero">
@@ -46,42 +46,54 @@
 
 <div class="poster">
     <div class="poster___img">
-        <img src="ganja.jpg" alt="">
+        <img src="piantagione.jpg" alt="">
     </div>
     <div class="poster_content">
         <h1 class="big-text" >Delta-9 tetraidro cannabinolo</h1>
-        <p1 pt>È una sostanza psicotropa prodotta dai fiori di cannabis, può essere ingerito, fumato o inalato grazie ad un vaporizzatore. Presenta effetti analgesici, stimolanti e psichedelici, soprattutto se assunta ad un dosaggio superiore ai 100mg inalata per combustione</p1>
+        <p1 pt>È una sostanza psicotropa prodotta dai fiori di cannabis, può essere ingerito, fumato o inalato grazie ad un vaporizzatore. Presenta effetti analgesici, stimolanti e psichedelici, soprattutto se assunta ad un dosaggio superiore ai 100mg inalata per combustione               </p1>
         <a href="" class="button"> Call to action</a>
     </div>
 </div>
 
-<div class="bg-cover">
-    <div class="bg-cover__title">
-        <h3 class="big-text tw ml">Titolo del mio blocco cover</h3>
-    </div>
-    <div class="bg-cover__text">
-    
-        <h4 class="tw">Titolo del mio paragrafo</h4>
-        <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestia</p1>
-        
-        <h4 class="tw">Titolo del mio paragrafo</h4>
-        <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestia</p1>
-        
-        <h4 class="tw">Titolo del mio paragrafo</h4>
-        <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestia</p1>
-    
-    </div>
+
+<div class="cover">
+  <div class="covertitle">
+    <h3 class="big-text tw">Infinite potenzialita</h3>
+  </div>
+  <div class="covertext">
+
+    <h4 class="normal-text tw">Titolo del mio paragrafo</h4>
+    <p class="tw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestias dolor, vel provident a est hic cupiditate ea. Eveniet quod distinctio asperiores ullam dignissimos nulla illum impedit enim aliquid ratione.</p>
+
+    <h4 class="normal-text tw">Titolo del mio paragrafo</h4>
+    <p class="tw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestias dolor, vel provident a est hic cupiditate ea. Eveniet quod distinctio asperiores ullam dignissimos nulla illum impedit enim aliquid ratione.</p>
+
+    <h4 class="normal-text tw">Titolo del mio paragrafo</h4>
+    <p class="tw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestias dolor, vel provident a est hic cupiditate ea. Eveniet quod distinctio asperiores ullam dignissimos nulla illum impedit enim aliquid ratione.</p>
+
+  </div>
 </div>
 
+<div class="grid">
+  <div> 
+    <h3 class="big-text">Lorem, ipsum .</h3>
+  </div>
+  <div>
+    <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro neque numquam laudantium tempore eligendi odit inventore laborum animi ratione sit recusandae, modi unde a assumenda corporis aut molestias iste!</p>
+  </div>
+</div>
 
-</html>
-
-
-
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+  <div class="carousel-cell">text</div>
+  <div class="carousel-cell">text</div>
+  <div class="carousel-cell">text</div>
+</div>
 
 
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
 
 <script>
     $( document ).ready(function() {
@@ -90,5 +102,11 @@
         $(".menu").toggleClass("menu-open");
       });
     });
+
+
+  
 </script>
+</body>
+
+</html>
 
