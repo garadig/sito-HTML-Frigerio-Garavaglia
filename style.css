@@ -4,6 +4,14 @@ body{
   font-style: normal;
   }
 
+  .bginfo{
+    background-color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    z-index: 1;
+    
+  }
+
 .bacasime-antique-regular {
     font-family: "Bacasime Antique", serif;
     font-weight: 500;
@@ -17,28 +25,104 @@ font-weight: weight;
 font-style: normal;
 }
 
+.inconsolata-uniquifier {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
+.mixb{
+  mix-blend-mode: difference;
+}
+.in{
+  font-family: "Inconsolata" monospace;
+}
 
+.ff{
+  font-family: "Montserrat", sans-serif;
+}
 
-.c{color:aqua}
+.smallfont{
+  font-size: 10px;
+}
+
+.c{color:#96bc31}
   
+.bp{
+  padding-bottom: 10px;
+}
+
+.bp30{
+  padding-bottom: 30px;
+}
+
+.tm{
+  margin-top: 30px;
+}
+
+.tm80{
+  margin-top: 80px;
+}
 
 
+.fs{
+  font-size: 15px;
+}
 
+.mb10{
+  margin-bottom: 10px;
+}
+
+.mb20{
+  margin-bottom: 15px;
+}
+
+.mb30{
+  margin-bottom: 30px;
+}
 
 a{text-decoration: none;}
 
-h1,h2,h3,h4, p{color: #000;padding-bottom: 30px;}
+.b{font-weight: bold;}
+
+.tc{
+  text-align: center;
+}
+
+.gray{
+  color: #a0a0a0
+}
+
+h1,h2,h3,h4, p{color: #000;padding-bottom: 30px; font-family:"Montserrat" ;}
 h6 {color:#fff;padding-bottom: 30px;}
 
 p1{line-height: 28px;color: #666; font-weight: 300;}
 
 .tw{color:#fff}
 
-.big-text{font-size: 70px;font-weight: 900;}
-.medium-text{font-size: 40px;}
-.small-text{font-size: 20px;}
-.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+.tb{color:black !important}
+
+.big-text{font-size: 70px;font-weight: 900;font-family: "Montserrat", sans-serif;}
+.medium-text{font-size: 40px;font-family: "Montserrat", sans-serif;}
+.small-text{font-size: 20px;font-family: "Montserrat", sans-serif;}
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;font-family: "Montserrat", sans-serif;}
+
+.ct{
+  text-align: center;
+  color: #a428a8
+}
+
+.infotitle{
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  text-align: center;
+
+}
 
 .button{padding: 18px
     15px; background: #96bc31;display: inline-block;border-radius: 4px;font-family: "Montserrat";
@@ -65,6 +149,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     left: 0;
     padding: 30px;
     display: flex;
+    z-index: 2;
 }
 
 
@@ -165,7 +250,18 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 }
 
+.col-50{width: 50%;padding: 5%;}
 
+
+.coveri{
+  height: 80vh;
+  width: 100%;
+  padding: 4%;
+  background: url("cover-4.jpg") no-repeat center center; background-size:cover;
+  display:flex;justify-content:center;align-items: center;
+}
+
+.img-res{width: 100%;height: auto;}
 
 
 .poster___img{
@@ -220,41 +316,437 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   background-size: cover;
   box-shadow: 0px 0px 100px 0px black;
   margin-top: 100px;
+  padding-top: 8%;
+  padding-bottom: 5%;
 }
 
 .covertext{
   width: 50%;
   font-family: "montserrat";
-  padding: 50px;
+  padding-top: px;
+  padding-right: 50px;
+  margin-left: 70px;
+  padding-bottom: 50px;
+
 }
 .covertitle{
-  width: 50%;
+  bottom: 50%d;
   font-family: "montserrat";
   display: block;
   align-items: center;
   padding: 50px;
+  position:relative
 }
 .content{max-width: 900px; margin: 40px auto;}
 
-.grid{
-  display: flex;
-  min-width: 1350px;
-  padding: 0 30px;
-  margin: 0 auto;
-  border: 1px solid red;
+
+.benefici{
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 8%;
+  justify-content:center;
 }
 
-.grid .col{width: 100%;}
+.js{
+  justify-content: center;
+}
+
+
 
 .main-carousel{
-  border: 1px solid red;padding: 40px;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 .carousel-cell{
   width: 350px;
   height: 350px;
-  border: 1px solid red;
+  margin-right: 40px;
 
+}
+
+.carousel-cell__content-terapia{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('terapia.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex ;
+  justify-content: center;
+}
+
+.content-terapia{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+
+
+.carousel-cell__content-terapia:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('terapia.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+.carousel-cell__content-terapia:hover .content-terapia{
+  transition-duration: 2s;
+  display: inline;
+  text-size-adjust:50 px;
+  color: white;
+}
+
+
+
+.carousel-cell__content-infiammazione{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('infiammazione.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-cell__content-infiammazione:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('infiammazione.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+.content-infiammazione{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+.carousel-cell__content-infiammazione:hover .content-infiammazione{
+  transition-duration: 2s;
+  display: inline;
+  color: white;
+}
+
+
+.carousel-cell__content-cancro{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('cancro.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-cell__content-cancro:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('cancro.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+.content-cancro{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+.carousel-cell__content-cancro:hover .content-cancro{
+  transition-duration: 2s;
+  display: inline;
+  color: white;
+}
+
+.carousel-cell__content-sociale{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('sociale.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-cell__content-sociale:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('sociale.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+
+.content-sociale{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+.carousel-cell__content-sociale:hover .content-sociale{
+  transition-duration: 2s;
+  display: inline;
+  color: white;
+}
+
+.carousel-cell__content-pressione{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('occhio.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.carousel-cell__content-pressione:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('occhio.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+
+
+.content-pressione{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+.carousel-cell__content-pressione:hover .content-pressione{
+  transition-duration: 2s;
+  display: inline;
+  color: white;
+}
+
+
+
+.carousel-cell__content-sonno{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('sonno.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.carousel-cell__content-sonno:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('sonno.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+.content-sonno{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+.carousel-cell__content-sonno:hover .content-sonno{
+  transition-duration: 2s;
+  display: inline;
+  color: white;
+}
+
+
+
+.carousel-cell__content-appetito{
+  width: 100%;
+  height: 100%;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-image: url('cibo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content-appetito{
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+
+.carousel-cell__content-appetito:hover{
+  transition-duration: 2s;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
+     url('cibo.png');
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;  
+}
+
+
+.carousel-cell__content-appetito:hover .content-appetito{
+  transition-duration: 2s;
+  display: inline;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titolo-pro{
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 8%;
+    justify-content:center;
+
+}
+
+
+#prodotti{
+  text-align: center
+}
+
+.section-p1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  position:absolute;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0px 0px 10px 0px black;
+  
+}
+
+#prodotti .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.pro-container{
+  width: 20%;
+  min-width: 200px;
+  padding: 10px 13px ;
+  border: 1px solid white;
+  background-repeat: 20px;
+  margin-left: 9%;
+  background-color: white;
+  margin-top: 70px;
+  box-shadow: 0px 0px 3px 0px black;
+  position: relative
+  right 40%,left 60%;
+}
+
+#prodotti .pro img{
+  width: 100%;
+  border-radius: 20px;
+  min-width: 100%;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 12%;
+  position:relative;
+  left: 3%;
+
+}
+
+
+
+
+.des{
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+}
+
+.centr{
+  align-self: center;
+}
+
+.star{
+  display: flex;
+  width: 10% ;
+  align-items: center;
+  position:relative;
+  left:20%;
+  margin-bottom: 5%;
 }
 
 *,
