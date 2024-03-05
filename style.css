@@ -768,3 +768,22 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     margin-top: 100px;
     font-family: "montserrat";
 }
+.tappe li{
+  padding: 30px;
+  display: flex;
+}
+.tappe li h5{
+  font-size: 50px;
+  color: #96bc31;
+  font-weight: bold;
+}
+
+#immagine{
+  width: 40%;
+  background-color: #ccc;
+}
+
+#testo{
+  width: 60%;
+  padding: 20px;
+}
