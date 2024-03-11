@@ -764,6 +764,12 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 }
 
 
+
+
+
+
+
+
 .tappe{
     margin-top: 100px;
     font-family: "montserrat";
@@ -779,20 +785,32 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   padding: 0px 0px 30px;
 }
 
-.tappe__numero{
-  width: 300px;
-  height: 300px;
-  flex-shrink: 0;
-  text-align: end;
-}
-
 .tappe__numero p{
   font-size: 300px;
   color: #96bc31;
 }
 
 .tappe__testo{
-  margin-top: 30px;
-  width: auto;
-  padding: 20px;;
+  padding: 60px 20px 30px 50px;
+  max-width: 800px;
+}
+
+.tappe__numerobolla{
+  width: 300px;
+  height: 300px;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  font-weight: bold;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tappe__numerobolla img{
+  padding: 40px 50px 60px 50px;
+}
+
+@media (max-width: 768px) {
+  .tappe li{display: block;}
 }
