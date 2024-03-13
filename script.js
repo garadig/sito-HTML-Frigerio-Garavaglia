@@ -1,24 +1,35 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var whiteText = document.querySelector('.tw');
-    var background = document.querySelector('.background');
-  
-    function checkOverlap() {
-      var whiteTextRect = tw.getBoundingClientRect();
-      var backgroundRect = background.getBoundingClientRect();
-  
-      if (
-        whiteTextRect.left < backgroundRect.right &&
-        whiteTextRect.right > backgroundRect.left &&
-        whiteTextRect.top < backgroundRect.bottom &&
-        whiteTextRect.bottom > backgroundRect.top
-      ) {
-        whiteText.classList.add('tb');
-      } else {
-        whiteText.classList.remove('tb');
+const config = {
+  type: 'radar',
+  data: data,
+  options: {
+    elements: {
+      line: {
+        borderWidth: 3
       }
     }
-  
-    document.addEventListener('scroll', checkOverlap);
-    window.addEventListener('resize', checkOverlap);
-    checkOverlap();
-  });
+  },
+};
+
+const data = {
+  labels: [
+    'Eating',
+    'Drinking',
+    'Sleeping',
+    'Designing',
+    'Coding',
+    'Cycling',
+    'Running'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [65, 59, 90, 81, 56, 55, 40],
+    fill: true,
+    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    borderColor: 'rgb(255, 99, 132)',
+    pointBackgroundColor: 'rgb(255, 99, 132)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(255, 99, 132)'
+  }]
+
+};
