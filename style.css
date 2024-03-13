@@ -283,7 +283,6 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     background: linear-gradient(0deg, rgba(0,0,0,0.0), rgb(0, 0, 0,0.9));
     background-size: cover;
     box-shadow: 0px 0px 100px 0px black;
-
 }
 
 .herosiamo{
@@ -409,9 +408,15 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   
 }
 
+.video {
+  position:fixed;
+  display: block;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
 
-
-
+}
 .ft{
   font-size: 50px; font-weight: 800px;
 }
@@ -442,11 +447,6 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   .poster__img, 
   .poster__content{width: 100%;}
 }
-    
-    .poster{flex-wrap: wrap ;height: auto;}
-    .poster__img, 
-    .poster__content{width: 100%;}
-    }
     
 
 
@@ -975,6 +975,9 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 }
 
+
+
+
 .icone{
   display:flex;
   justify-content: center;
@@ -1037,6 +1040,8 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   margin-left:10%;
   text-align: center;
  }
+
+
 
 .info__content{
 margin-left: 30px; ;
