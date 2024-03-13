@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Marketplace</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<script src="Chart.js"></script>
+   <div class="header ">
+        <div class="logo">
+            <img src="logosito.png" alt="">
+        </div>
+        <ul class="menu">
+            <li><a class="mixb" href="sito.html">HOME PAGE</a></li>
+            <li><a class="active" href="info.html">PRODOTTI</a></li>
+            <li><a class="mixb" href="procedimento.html">PROCEDIMENTO</a></li>
+        </ul>
+        <div class="cta">
+            <a href=""class="buttona">Contatti</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="copertina">
+        <div class="copertina___img">
+            <img src="pro12.jpg" alt="">
+        </div>
+        <div class="copertina_title">
+            <h1 class="big-text" >ORANGE CBD</h1>
+        </div>
+    </div>
+
+
+    <div class="proinfo">
+        <div class="grafico">
+            <canvas id="myChart" ></canvas>
+        </div>        
+        <div class="info__content">
+            <h1 class="small-title b">DESCRIZIONE</h1>
+            <p class="small-text g2" >Questo innovativo prodotto deriva direttamente dall’Orange Skunk, una delle rappresentanti più famose della cannabis legale old school. Uno dei punti di forza di questa genetica, oltre alle sue origini, è il suo sapore davvero unico e forte, con un retrogusto che la accomuna alla famiglia delle Indiche. L’intensità della fragranza e dell’aroma, inoltre, contribuiscono a renderla molto simile alle sue parenti ricche di THC. Tale risultato, che va oltre le potenzialità naturali della pianta, viene ottenuto grazie ad uno speciale trattamento con resine naturali che viene eseguito nella fase finale di fioritura della pianta. Il nome è un chiaro riferimento all’elevata presenza di CBD nei fiori della pianta. Ciò rende il prodotto unico nel suo genere. La percentuale totale di cannabinoidi arriva anche al 50%!</p>
+            <h1 class="small-title b">ASPETTO</h1>
+            <p class="small-text">Le cime della Orange CBD Boost sono di dimensioni medie. I fiori sono resistenti, molto consistenti al tatto e si presentano con una colorazione verde (più o meno chiara) con una elevatissima presenza di pistilli arancioni. Il suo nome infatti deriva proprio dalla sua forte colorazione arancione dovuta ad una grande presenza di tricomi sui fiori.
+                Tale Prodotto viene anche definito dagli intenditori come una “ICE WEED” in quanto la presenza esagerata di cannabidiolo rende i rami e i fiori come se fossero ghiacciati; questo effetto è dato dai cristalli di CBD che a temperatura ambiente tendono ad orientarsi su un colore bianco.</p>
+            <h1 class="small-title b">AROMA</h1>
+            <p class="small-text g2" >Il profumo agrumato è la prima caratteristica che colpisce il gusto e l’olfatto.
+                L’aroma e il profumo, infatti, ricordano il profumo degli aranceti in fiore.
+                Questo aroma penetrante di agrumi viene poi addolcito nel retrogusto da un sentore dolce e fruttato, con leggere ma inconfondibili tracce di chiodi di garofano e cannella.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+    const ctx = document.getElementById('myChart');
+    
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+        labels: ['sballo', 'sapore', 'combustione', 'fame', 'rilassamento', 'sonnolenza'],
+        datasets: [{
+            label: '# of Votes',
+            data: [18, 7, 21, 10, 22, 27],
+            borderWidth: 2,
+            pointRadius:6,
+            backgroundColor: 'rgba(150, 188, 49, 0.4)',
+            borderColor: 'rgb(150, 188, 49)',
+            pointBackgroundColor: 'rgb(150, 188, 49)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(150, 188, 49)'
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true
+            }
+        }
+        }
+    });
+    </script>
+</html>

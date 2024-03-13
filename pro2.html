@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Marketplace</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<script src="Chart.js"></script>
+   <div class="header ">
+        <div class="logo">
+            <img src="logosito.png" alt="">
+        </div>
+        <ul class="menu">
+            <li><a class="mixb" href="sito.html">HOME PAGE</a></li>
+            <li><a class="active" href="info.html">PRODOTTI</a></li>
+            <li><a class="mixb" href="procedimento.html">PROCEDIMENTO</a></li>
+        </ul>
+        <div class="cta">
+            <a href=""class="buttona">Contatti</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="copertina">
+        <div class="copertina___img">
+            <img src="pro2.jpg" alt="">
+        </div>
+        <div class="copertina_title">
+            <h1 class="big-text" >LEMON CHEESE</h1>
+        </div>
+    </div>
+
+
+    <div class="proinfo">
+        <div class="grafico">
+            <canvas id="myChart" ></canvas>
+        </div>        
+        <div class="info__content">
+            <h1 class="small-title b">DESCRIZIONE</h1>
+            <p class="small-text g2" >La Lemon Cheese è conosciuta anche come Franco’s Lemon Cheese: è stata creata infatti in onore del coltivatore Franco Loja, scomparso qualche anno fa. Il suo aroma unico e particolare ne fa una delle qualità più richieste nel mondo della Cannabis Legale</p>
+            <h1 class="small-title b">ASPETTO</h1>
+            <p class="small-text g2" >Le infiorescenze di Lemon Cheese sono di un verde chiaro, tendente al giallo; ciò è dovuto alla forte presenza di resina sulle cime.
+                Osservandole da vicino si possono notare pistilli e tricomi di color arancio chiaro, che ricoprono il verde della base.
+                I buds sono di grandezza media con una scarsa presenza di cime apicali.</p>
+            <h1 class="small-title b">AROMA</h1>
+            <p class="small-text g2" >Come il nome lascia intuire, l’aroma di questa pianta è il suo principale biglietto da visita. Questi fiori hanno una fragranza molto diversa da tutte le altre Cannabis Light: il suo profumo è forte e intenso, con un chiaro sentore di agrumi dove quello di limone predomina; aroma  che ritroviamo anche nel retrogusto particolarmente floreale e con un forte richiamo ai limoneti in fiore</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+    const ctx = document.getElementById('myChart');
+    
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+        labels: ['sballo', 'sapore', 'combustione', 'fame', 'rilassamento', 'sonnolenza'],
+        datasets: [{
+            label: '# of Votes',
+            data: [18, 22, 10, 27, 15, 8],
+            borderWidth: 2,
+            pointRadius:6,
+            backgroundColor: 'rgba(150, 188, 49, 0.4)',
+            borderColor: 'rgb(150, 188, 49)',
+            pointBackgroundColor: 'rgb(150, 188, 49)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(150, 188, 49)'
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true
+            }
+        }
+        }
+    });
+    </script>
+</html>

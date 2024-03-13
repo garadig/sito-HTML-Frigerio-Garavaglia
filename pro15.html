@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Marketplace</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<script src="Chart.js"></script>
+   <div class="header ">
+        <div class="logo">
+            <img src="logosito.png" alt="">
+        </div>
+        <ul class="menu">
+            <li><a class="mixb" href="sito.html">HOME PAGE</a></li>
+            <li><a class="active" href="info.html">PRODOTTI</a></li>
+            <li><a class="mixb" href="procedimento.html">PROCEDIMENTO</a></li>
+        </ul>
+        <div class="cta">
+            <a href=""class="buttona">Contatti</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="copertina">
+        <div class="copertina___img">
+            <img src="pro15.jpg" alt="">
+        </div>
+        <div class="copertina_title">
+            <h1 class="big-text" >BURBUKA</h1>
+        </div>
+    </div>
+
+
+    <div class="proinfo">
+        <div class="grafico">
+            <canvas id="myChart" ></canvas>
+        </div>        
+        <div class="info__content">
+            <h1 class="small-title b">DESCRIZIONE</h1>
+            <p class="small-text g2" >Il Burbuka o Bourbouka, è indiscutibilmente una delle qualità di hashish più apprezzate insieme al Charas.
+                Il tasso di CDB è molto alto, raggiunge infatti anche il 35%, mentre la percentuale di THC si attesta, come previsto, sotto lo 0,2%. Il fattore determinante per la qualità è sicuramente dato dalla sua provenienza. Di fatto il Bourbouka rappresenta l’hashish di tipologia marocchina più richiesto dagli amanti del mondo della marijuana legale.</p>
+            <h1 class="small-title b">ASPETTO</h1>
+            <p class="small-text">L’aspetto di questo hashish legale lo rende molto simile a quello di origine marocchina e ricco di THC. Si presenta infatti con una consistenza morbida ma allo stesso tempo corposa.
+                Molto famoso per la sua colorazione molto scura che rende il marrone quasi nero; la parte interna è ovviamente più chiara ma rimane sempre abbastanza scura rispetto alle altre tipologie di hashish.</p>
+            <h1 class="small-title b">AROMA</h1>
+            <p class="small-text g2" >La particolarità di questo hashish legale viene proprio dal suo aroma; quest’ultimo ricorda davvero molto gli estratti e le resine diffusesi negli anni ’90.
+                L’odore è deciso, intenso ed avvolgente con forti note di terra.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+    const ctx = document.getElementById('myChart');
+    
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+        labels: ['sballo', 'sapore', 'combustione', 'fame', 'rilassamento', 'sonnolenza'],
+        datasets: [{
+            label: '# of Votes',
+            data: [20, 6, 16, 28, 11, 19],
+            borderWidth: 2,
+            pointRadius:6,
+            backgroundColor: 'rgba(150, 188, 49, 0.4)',
+            borderColor: 'rgb(150, 188, 49)',
+            pointBackgroundColor: 'rgb(150, 188, 49)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(150, 188, 49)'
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true
+            }
+        }
+        }
+    });
+    </script>
+</html>
