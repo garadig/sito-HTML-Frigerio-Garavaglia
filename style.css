@@ -284,7 +284,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
     padding: 40px 50px;
     font-family: "montserrat";
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .poster__content p1{padding: 20px 0px 0px 0px;}
@@ -773,14 +773,13 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 
 .tappe{
-    margin-top: 100px;
-    font-family: "montserrat";
-
+  margin-top: 100px;
+  font-family: "montserrat";
 }
 .tappe li{
-  padding: 30px;
+  padding: 40px 8%;
   display: flex;
-
+  flex-direction: row;
 }
 .tappe li h5{
   font-size: 50px;
@@ -795,7 +794,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 }
 
 .tappe__testo{
-  padding: 60px 50px 30px 50px;
+  padding: 60px 50px;
   max-width: 800px;
   border-bottom: 2px solid #b6c983;
 }
@@ -812,17 +811,19 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   justify-content: center;
 }
 
+.tappe__numerobolla img{
+  padding: 40px 50px 60px 50px;
+  width: 300px;
+}
+
+
 #reverse{
   flex-direction: row-reverse;
   text-align: right;
 }
 
-.tappe__numerobolla img{
-  padding: 40px 50px 60px 50px;
-}
-
 @media (max-width: 768px) {
-  .tappe li{display: block;}
+  .tappe li{flex-direction: column; align-items: center;}
   .tappe li h5{font-size: 30px;}
-  #reverse{text-align: left;}
+  #reverse{text-align: left; flex-direction: column;}
 }
