@@ -371,31 +371,20 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 }
 
-.poster___img{
-  width: 50%;
-  height: 100%;
 
-}
-
-.poster___img img{
-
+.poster__img img{
   width: 100%;
   height: 100%;
-  margin: 2 px 0px 0 0;
   border-top: 3px solid rgba(134,200,32);
 
 } 
 
-
-
-.poster_content{
-  margin-left: 30px; ;
-  margin-top: 10px;
-  width: 45%;
-  padding: 40px;
-  font-family: "montserrat";
-  display: flex;
-  flex-wrap: wrap;
+.poster__content{
+    width: 45%;
+    padding: 40px 50px;
+    font-family: "montserrat";
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -428,14 +417,10 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 }
 
 @media (max-width: 768px) {
-    .poster{flex-wrap: wrap ;height: auto;}
-    .poster__img, 
-    .poster__content{width: 100%;}
-    }
-    
-
-
-    video {
+  .poster{display: block; height: auto;; width: 100%;}
+  .poster__img, 
+  .poster__content{width: 100%;}
+  video {
       position:fixed;
       top: 50%;
       left: 50%;
@@ -449,39 +434,63 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
                 transform: translate(-50%, -50%);
       }
       
+}
+
+@media (max-width: 1023px){
+
+  .poster{display: block; height: auto;; width: 100%;}
+  .poster__img, 
+  .poster__content{width: 100%;}
+}
+    
+    .poster{flex-wrap: wrap ;height: auto;}
+    .poster__img, 
+    .poster__content{width: 100%;}
+    }
+    
+
+
+
     
       
 .cover{
   display: flex;
-  padding: 100px;
+  padding: 8%;
   background: linear-gradient(0deg, rgba(0,0,0,0.3), rgb(0, 0, 0,0.9)),
     url('alto.jpg') no-repeat center center;
   background-size: cover;
   box-shadow: 0px 0px 100px 0px black;
   margin-top: 100px;
-  padding-top: 8%;
-  padding-bottom: 5%;
+
 }
 
 .covertext{
   width: 50%;
   font-family: "montserrat";
-  padding-top: px;
-  padding-right: 50px;
-  margin-left: 70px;
-  padding-bottom: 50px;
+  padding-left: 30px;
 
 }
 .covertitle{
-  bottom: 50%d;
+  bottom: 50%;
   font-family: "montserrat";
   display: block;
   align-items: center;
-  padding: 50px;
+  padding: 50px ;
   position:relative
 }
 .content{max-width: 900px; margin: 40px auto;}
 
+@media (max-width: 768px) {
+  .cover{display: block; padding: 0px;}
+  .covertext, .covertitle{width:100%; padding: 50px;}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .cover{display: block; padding: 0px;}
+  .covertext, .covertitle{width:100%; padding: 50px;}
+
+}
 
 .benefici{
   width: 50%;
@@ -1083,3 +1092,65 @@ flex-wrap: wrap;
 }
 
 
+
+
+
+
+
+
+
+
+.tappe{
+    margin-top: 100px;
+    font-family: "montserrat";
+
+}
+.tappe li{
+  padding: 30px;
+  display: flex;
+
+}
+.tappe li h5{
+  font-size: 50px;
+  color: #96bc31;
+  font-weight: bold;
+  padding: 0px 0px 30px;
+}
+
+.tappe__numero p{
+  font-size: 300px;
+  color: #96bc31;
+}
+
+.tappe__testo{
+  padding: 60px 50px 30px 50px;
+  max-width: 800px;
+  border-bottom: 2px solid #b6c983;
+}
+
+.tappe__numerobolla{
+  width: 300px;
+  height: 300px;
+  background: #96bc31;
+  border-radius: 100%;
+  line-height: 350px;
+  font-weight: bold;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#reverse{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.tappe__numerobolla img{
+  padding: 40px 50px 60px 50px;
+}
+
+@media (max-width: 768px) {
+  .tappe li{display: block;}
+  .tappe li h5{font-size: 30px;}
+  #reverse{text-align: left;}
+}
