@@ -225,9 +225,11 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 }
 
 
-.menu li a:hover, 
+.menu li a:hover{
+  opacity: 0.5;
+}
 .menu li a.active{
-  color:#96bc31
+  color:#96bc31;
 }
 
 .hamburger{ display: none;}
@@ -296,6 +298,8 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 }
 
+
+
 .heroinfo__content{
   display:block;
   z-index: 3;
@@ -324,11 +328,25 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   background-size: 20%;
 }
 
+.heroprotitle{
+  background: url('spirale7.jpg') center;
+  background-clip: text;
+  color: transparent;
+  background-size: 20%;
+}
+
 .herosiamotitle{
   background: url('spirale5.jpg') center;
   background-clip: text;
   color: transparent;
   background-size: 50%;
+}
+
+.heroprointro{
+  background: url('spirale7.jpg') center;
+  background-clip: text;
+  color: transparent;
+  background-size: 20%;
 }
 
 .herosiamointro{
@@ -350,7 +368,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 #prod{
     background: linear-gradient(0deg, rgba(0,0,0,0.0), rgb(0, 0, 0,0.9)),
-    url('prod.jpg') no-repeat center center;
+    url('coltivazioni.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -1079,9 +1097,6 @@ flex-wrap: wrap;
 
 
 
-
-
-
 .tappe{
   margin-top: 100px;
   font-family: "montserrat";
@@ -1130,6 +1145,11 @@ flex-wrap: wrap;
 #reverse{
   flex-direction: row-reverse;
   text-align: right;
+}
+
+.tappe__numerobolla img{
+  padding: 40px 50px 60px 50px;
+  width: 300px;
 }
 
 @media (max-width: 768px) {
