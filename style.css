@@ -418,23 +418,27 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 
 .img-res{width: 100%;height: auto;}
 
-.bginfo{
-  background-color: #fff;
-  border-radius: 50px;
+
+
+.poster__img img{
   width: 100%;
-  z-index: 1;
-  
+  height: 100%;
+  border-top: 3px solid rgba(134,200,32);
+
+} 
+
+
+.poster__content{
+    width: 45%;
+    padding: 40px 50px;
+    font-family: "montserrat";
+    display: flex;
+    flex-direction: column;
 }
 
-.video {
-  position:fixed;
-  display: block;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
+.poster__content p1{padding: 20px 0px 0px 0px;}
 
-}
+
 .ft{
   font-size: 50px; font-weight: 800px;
 }
@@ -1094,9 +1098,8 @@ flex-wrap: wrap;
 
 
 .tappe{
-    margin-top: 100px;
-    font-family: "montserrat";
-
+  margin-top: 100px;
+  font-family: "montserrat";
 }
 .tappe li{
   padding: 40px 8%;
@@ -1116,7 +1119,7 @@ flex-wrap: wrap;
 }
 
 .tappe__testo{
-  padding: 60px 50px 30px 50px;
+  padding: 60px 50px;
   max-width: 800px;
   border-bottom: 2px solid #b6c983;
 }
@@ -1133,6 +1136,12 @@ flex-wrap: wrap;
   justify-content: center;
 }
 
+.tappe__numerobolla img{
+  padding: 40px 50px 60px 50px;
+  width: 300px;
+}
+
+
 #reverse{
   flex-direction: row-reverse;
   text-align: right;
@@ -1144,7 +1153,7 @@ flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-  .tappe li{display: block;}
+  .tappe li{flex-direction: column; align-items: center;}
   .tappe li h5{font-size: 30px;}
-  #reverse{text-align: left;}
+  #reverse{text-align: left; flex-direction: column;}
 }
