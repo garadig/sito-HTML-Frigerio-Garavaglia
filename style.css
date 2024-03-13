@@ -541,7 +541,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('terapia.png');
+  background-image: url('icone_carousel/terapia.png');
   background-repeat: no-repeat;
   background-position: center;
   display:flex ;
@@ -561,7 +561,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-terapia:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('terapia.png');
+     url('icone_carousel/terapia.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -585,7 +585,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('infiammazione.png');
+  background-image: url('icone_carousel/infiammazione.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -593,7 +593,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-infiammazione:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('infiammazione.png');
+     url('icone_carousel/infiammazione.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -623,7 +623,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('cancro.png');
+  background-image: url('icone_carousel/cancro.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -631,7 +631,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-cancro:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('cancro.png');
+     url('icone_carousel/cancro.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -660,7 +660,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('sociale.png');
+  background-image: url('icone_carousel/sociale.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -668,7 +668,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-sociale:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('sociale.png');
+     url('icone_carousel/sociale.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -698,7 +698,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('occhio.png');
+  background-image: url('icone_carousel/occhio.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -707,7 +707,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-pressione:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('occhio.png');
+     url('icone_carousel/occhio.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -740,7 +740,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('sonno.png');
+  background-image: url('icone_carousel/sonno.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -749,7 +749,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-sonno:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('sonno.png');
+     url('icone_carousel/sonno.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -780,7 +780,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
   text-align: center;
   font-family: "montserrat";
   font-weight: bold;
-  background-image: url('cibo.png');
+  background-image: url('icone_carousel/cibo.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -796,7 +796,7 @@ p1{line-height: 28px;color: #666; font-weight: 300;}
 .carousel-cell__content-appetito:hover{
   transition-duration: 2s;
   background: linear-gradient(0deg, rgba(0,0,0,0.4), rgb(0,0,0,1)),
-     url('cibo.png');
+     url('icone_carousel/cibo.png');
   background-position: center;
   color: white;
   background-repeat: no-repeat;  
@@ -1072,33 +1072,6 @@ flex-wrap: wrap;
 
 
 
-
-
-
-.tappe{
-    margin-top: 100px;
-    font-family: "montserrat";
-}
-.tappe li{
-  padding: 30px;
-  display: flex;
-}
-.tappe li h5{
-  font-size: 50px;
-  color: #96bc31;
-  font-weight: bold;
-}
-
-
-#immagine{
-  width: 40%;
-  background-color: #ccc;
-}
-
-#testo{
-  width: 60%;
-  padding: 20px;
-}
 
 
 
